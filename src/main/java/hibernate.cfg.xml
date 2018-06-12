@@ -6,6 +6,9 @@
     <session-factory>
         <property name="connection.url">jdbc:h2:~/test</property>
         <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password" />
+
         <mapping class="com.jpa_test.AddressEntity"/>
         <mapping resource="com/jpa_test/AddressEntity.hbm.xml"/>
         <mapping class="com.jpa_test.EmployeeEntity"/>
@@ -14,10 +17,5 @@
         <mapping resource="com/jpa_test/EmpProjEntity.hbm.xml"/>
         <mapping class="com.jpa_test.ProjectEntity"/>
         <mapping resource="com/jpa_test/ProjectEntity.hbm.xml"/>
-        <!-- <property name="connection.username"/> -->
-        <!-- <property name="connection.password"/> -->
-
-        <!-- DB schema will be updated if needed -->
-        <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>
 </hibernate-configuration>
